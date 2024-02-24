@@ -36,24 +36,13 @@
     </select>
     <br />
     <br />
-    <label>Lent To:</label>
-    <input />
+    <label asp-for="LentTo">Lent To:</label>
+    <input asp-for="LentTo"/>
     <br />
     <br />
-    <label>Notes:</label>
-    <input />
+    <label asp-for="Notes">Notes:</label>
+    <input type="text" maxlength="25" asp-for="Notes"/>
     <br />
     <br />
     <button type="submit">Add Movie</button>
-    
-
-    <!--Category
-        Title
-        Year
-        Director
-        Rating - drop down
-        Edited -yes/no true false , not necessary
-        Lent To: - not necessary
-        Notes - not necessary, limited to 25 char
-    -->
 </form>
