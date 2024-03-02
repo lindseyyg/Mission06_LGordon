@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Mission06_LGordon.Models;
 
@@ -10,9 +11,11 @@ using Mission06_LGordon.Models;
 namespace Mission06_LGordon.Migrations
 {
     [DbContext(typeof(MovieAddContext))]
-    partial class MovieAddContextModelSnapshot : ModelSnapshot
+    [Migration("20240301050638_Initial6")]
+    partial class Initial6
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.2");
